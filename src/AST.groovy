@@ -11,13 +11,12 @@ class AST {
         ]
 
 
-        // The exception is handled magically
+        // The drop methods from the gdk
 
-        try {
-            println(persons[1].getName().toLong())
-        }
-        catch (Exception e){
-            println(e.message)
-        }
+
+        //the string is 'Yuri'
+        println(persons[1].getFirstName().drop(2)) //expect 'ri'
+        println(persons[1].getFirstName().dropRight(2)) //expect 'Yu'
     }
+
 }
