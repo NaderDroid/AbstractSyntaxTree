@@ -1,14 +1,14 @@
 class AST {
     static void main(String[] args) {
-        def age = 10
-        def name = "Nader"
-        def is_active = false
-        println(age)
-        println(name)
-        println(is_active)
+//        Person person = new Person()
+//        person.firstName = "Nader"
+//        person.lastName = "Althubaity"
+//        person.setAge(50)
+//        println(person.getName())
 
-        println(age.class.typeName)
-        println(name.class.typeName)
-        println(is_active.class.typeName)
+        Person person = new Person();
+        Person person1 = new Person("Nader" , "Althubaity" , 19);
+
+        println(person1.toString())
     }
 }
